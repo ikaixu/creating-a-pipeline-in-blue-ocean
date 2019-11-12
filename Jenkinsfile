@@ -10,7 +10,8 @@ pipeline {
     stage('Build') {
       steps {
         sh 'npm config set unsafe-perm true'
-        sh 'npm install --registry=http://npm.taobao.org/mirrors/node'
+        sh 'npm cache clean --force'
+        sh 'npm install --registry=http://registry.npm.taobao.org'
       }
     }
     stage('Test') {
