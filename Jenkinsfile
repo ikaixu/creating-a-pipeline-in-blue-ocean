@@ -11,7 +11,7 @@ pipeline {
       steps {
         sh 'npm config set unsafe-perm true'
         sh 'npm install i -g cnpm'
-        sh 'cnpm install express'
+        sh 'cnpm install'
       }
     }
     stage('Test') {
