@@ -11,6 +11,7 @@ pipeline {
       steps {
         sh 'npm config set unsafe-perm true'
         sh 'npm i -g nrm'
+        sh 'nrm ls'
       }
     }
     stage('Test') {
