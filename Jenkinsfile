@@ -10,7 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'npm config set unsafe-perm true'
-        sh 'npm install -g cnpm --registry=https://registry.npm.taobao.org'
+        sh 'npm install i -g cnpm'
         sh 'cnpm install express'
       }
     }
