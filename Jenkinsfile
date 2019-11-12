@@ -9,6 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        sh 'npm config set unsafe-perm true'
         sh 'npm i -g nrm'
       }
     }
